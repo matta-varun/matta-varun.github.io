@@ -292,7 +292,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <!--<form action="#"> -->
+                    <form onsubmit="sendMail()">
                         <div class="field">
                             <div class="field name">
                                 <input type="text" id="sendername" placeholder="Name" required>
@@ -310,9 +310,9 @@
                             <textarea cols="30" rows="10" id="mailcontent" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button onclick="sendMail(); return false">Send mail</button>
+                            <button type="submit">Send mail</button>
                         </div>
-                    <!-- </form> -->
+                    </form>
                 </div>
             </div>
         </div>
