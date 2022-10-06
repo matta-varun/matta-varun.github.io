@@ -11,18 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    
     <script type="text/javascript">
         function sendMail() {
             var link = "mailto:varunkaleb@gmail.com"
-                     + "&subject=" + encodeURIComponent(document.getElemenentById('sendersubject').value + " - " + document.getElementById('sendername').value)
-                     + "&body=" + encodeURIComponent(document.getElementById('mailcontent').value)
+                 + "&subject=" + encodeURIComponent(document.getElementById('sendersubject').value)
+                 + "&body=" + encodeURIComponent(document.getElementById('mailcontent').value + "\n\nBest,\n" + document.getElementById('sendername').value)
             ;
 
             window.location.href = link;
+            return false;
         }
     </script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 </head>
@@ -292,7 +293,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form onsubmit="sendMail(); return false">
+                    <form action="#" onsubmit="return sendMail();">
                         <div class="field">
                             <div class="field name">
                                 <input type="text" id="sendername" placeholder="Name" required>

@@ -35,18 +35,19 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Student", "Software Developer", "Competitive Coder", "Writer", "Music Producer", "Artist"],
+        strings: ["Student", "Software Developer", "Writer", "Music Producer", "Artist"],
         typeSpeed: 100,
         backSpeed: 80,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Student", "Software Developer", "Competitive Coder", "Writer", "Music Producer", "Artist"],
+        strings: ["Student", "Software Developer", "Writer", "Music Producer", "Artist"],
         typeSpeed: 100,
         backSpeed: 80,
         loop: true
     });
+    
 
     // owl carousel script
     $('.carousel').owlCarousel({
